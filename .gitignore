@@ -1,0 +1,36 @@
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build / packaging artifacts
+dist/
+build/
+*.tgz
+*.tar.gz
+
+# Coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Environment / secrets (should never be committed)
+.env
+.env.local
+.env.*.local
+.npmrc
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Internal publishing instructions - never committed
+PUBLISHING.md

@@ -1,0 +1,59 @@
+{
+  "name": "@aiyoplane/verify",
+  "version": "1.0.1",
+  "description": "Offline Ed25519 verifier for Aiyo execution receipts. Verify a receipt against Aiyo's published JWKS with no Aiyo-side infrastructure available.",
+  "keywords": [
+    "aiyo",
+    "aiyoplane",
+    "execution-receipt",
+    "ed25519",
+    "jwks",
+    "verify",
+    "authorization",
+    "runtime-decision-point",
+    "rdp",
+    "settlement-verified",
+    "economic-execution-authorization"
+  ],
+  "author": {
+    "name": "Aiyoplane, Inc.",
+    "email": "rashon@aiyoplane.com",
+    "url": "https://aiyoplane.com"
+  },
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  },
+  "bin": {
+    "aiyo-verify": "src/cli.js",
+    "verify": "src/cli.js"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiyoplane/verify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aiyoplane/verify/issues"
+  },
+  "homepage": "https://aiyoplane.com",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node examples/verify-example.js",
+    "prepack": "chmod +x src/cli.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
